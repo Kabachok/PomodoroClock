@@ -1,6 +1,66 @@
+/*color palette
+red:    #b30000
+black:  #000
+white:  #f9ecf2
+green:  #99ffbb
+yellow: #ffff99*/
+
 /*main styles*/
+body{
+	background: #f9ecf2;
+}
+.jumbotron{
+	background: #000;
+	color: #f9ecf2;
+	text-shadow: 5px 2px 20px #f9ecf2;
+	text-align: center;
+	margin: 0px;
+}
+.main-content{
+	min-height: 450px;
+}
+.sub-header{
+	color: #f9ecf2;
+	background: #990000;
+	padding: 10px 10px;
+	border-left: 5px solid #4d0000;
+}
+
+/*pomodoro timer*/
+.pomodoro-svg{
+	height: 60px;
+	z-index: 0;
+}
+.timer-set{
+	text-align: center;
+	font-size: 3rem;
+}
+.set-btn, .set-btn:focus{
+	min-width: 50px;
+	padding: 10px;
+	font-size: 2rem;
+	border: 1px solid #ebc6d9;
+	border-radius: 10%;
+	color: #b30000;
+	background: transparent;
+}
+.set-btn:visited, .set-btn:hover {
+	background: #ffc6b3;
+	border: 1px solid #ebc6d9;
+}
+.control-timer{
+	text-align: center;
+	margin: 20px;
+}
+.start-pause, .start-pause:focus{
+	margin-top: 50px;
+	background: #000;
+	border: transparent;
+}
 
 /*mobile screen handling*/
 @media(max-width: 650px){
-	/*styles*/
+	.main-content{
+		min-height: 150px;
+	}
 }
