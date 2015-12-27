@@ -6,9 +6,7 @@ green:  #99ffbb
 yellow: #ffff99*/
 
 /*main styles*/
-body{
-	background: #f9ecf2;
-}
+body{ background: #f9ecf2; }
 .jumbotron{
 	background: #000;
 	color: #f9ecf2;
@@ -16,25 +14,26 @@ body{
 	text-align: center;
 	margin: 0px;
 }
-.main-content{
-	min-height: 450px;
+.pomodoro-letter{
+	color: #990000;
+	text-shadow: 5px 2px 20px #990000;
+}
+.pomodoro-letter img{
+	margin-left: -50px;
+	margin-top: -5px;
 }
 .sub-header{
 	color: #f9ecf2;
 	background: #990000;
 	padding: 10px 10px;
 	border-left: 5px solid #4d0000;
+	text-align: center;
 }
 
 /*pomodoro timer*/
-.pomodoro-svg{
-	height: 60px;
-	z-index: 0;
-}
-.timer-set{
-	text-align: center;
-	font-size: 3rem;
-}
+.control-timer{ text-align: center; }
+.pomodoro-svg{ height: 60px; }
+.timer-set{ font-size: 3rem; }
 .set-btn, .set-btn:focus{
 	min-width: 50px;
 	padding: 10px;
@@ -44,23 +43,24 @@ body{
 	color: #b30000;
 	background: transparent;
 }
-.set-btn:visited, .set-btn:hover {
-	background: #ffc6b3;
-	border: 1px solid #ebc6d9;
-}
-.control-timer{
-	text-align: center;
-	margin: 20px;
-}
+.set-btn:visited, .set-btn:hover { border: 1px solid #ebc6d9; }
 .start-pause, .start-pause:focus{
-	margin-top: 50px;
+	margin-top: -10px;
 	background: #000;
 	border: transparent;
 }
+.start-pause:hover{ background: #990000; }
+.timer-display{ font-size: 4rem; }
+.session{ color: #1fa24a; }
+.break{ color: #b30000; }
 
 /*mobile screen handling*/
 @media(max-width: 650px){
 	.main-content{
 		min-height: 150px;
+	}
+	.pomodoro-letter img{
+		margin-left: -40px;
+		margin-top: 5px;
 	}
 }
