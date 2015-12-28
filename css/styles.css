@@ -32,7 +32,6 @@ body{ background: #f9ecf2; }
 
 /*pomodoro timer*/
 .control-timer{ text-align: center; }
-.pomodoro-svg{ height: 60px; }
 .timer-set{ font-size: 3rem; }
 .set-btn, .set-btn:focus{
 	min-width: 50px;
@@ -44,35 +43,37 @@ body{ background: #f9ecf2; }
 	background: transparent;
 }
 .set-btn:visited, .set-btn:hover { border: 1px solid #ebc6d9; }
-.start-pause, .start-pause:focus{
-	margin-top: -10px;
+.start-pause, .start-pause:focus, .reset, .reset:focus{
 	background: #000;
 	border: transparent;
 }
-.start-pause:hover{ background: #990000; }
+.start-pause:hover, .reset:hover{ background: #990000; }
 .timer-display{ 
 	position: static;
 	font-size: 4rem; 
+	color: #f9ecf2;
 }
-.session{ color: #1fa24a; }
-.break{ color: #b30000; }
 .timer-box{
 	position: relative;
-	height: 120px;
-	width: 240px;
+	height: 181px;
+	width: 181px;
+    overflow: hidden;
 	border: 1px solid #990000;
-	border-radius: 10px;
+	border-radius: 50%;
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.timer-box > p{ padding-top: 30px; }
+.timer-box > p{ 
+	padding-top: 60px; 
+	text-shadow: 5px 2px 20px #000,
+				 1px 1px 4px #000;
+}
 .timer-fill{
 	position: absolute;
-	height: 120px;
-	width: 240px;
-	background: #ffc2b3;
-	border-radius: 10px;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
 	z-index: -1;
 }
 
