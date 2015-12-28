@@ -1,13 +1,11 @@
-// program code for the timer
-
-// how to anime a progress bar http://www.hongkiat.com/blog/html5-progress-bar/
-
 $(document).ready(function(){
 	$(".start-pause").click(function(){
 		changePosition();
 	});
 });
 
+// TODO: refact with this idea: http://codepen.io/gabrieleromanato/pen/jEfbn?editors=011
+
 function changePosition(){
-	$(".timer-fill").animate({top:'+=175px'}, 60000).animate({top:'-=175px'}, 60000, changePosition);
+	$(".timer-fill").animate({top:'-=180px'}, 15000).animate({top:'+=180px'}, 15000, changePosition);
 }

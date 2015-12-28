@@ -69,11 +69,19 @@ body{ background: #f9ecf2; }
 	text-shadow: 5px 2px 20px #000,
 				 1px 1px 4px #000;
 }
-.timer-fill{
+.timer-bckg{
 	position: absolute;
 	height: 180px;
 	width: 180px;
-	border-radius: 50%;
+	z-index: -2;
+}
+.timer-fill{
+	position: absolute;
+	top: 0px;
+	height: 180px;
+	width: 180px;
+	background: #f9ecf2;
+	border-radius: 0%;
 	z-index: -1;
 }
 
