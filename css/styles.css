@@ -84,6 +84,7 @@ body{ background: #f9ecf2; }
 	border-radius: 0%;
 	z-index: -1;
 }
+/*TODO: write a class for animated object; it has to include animation only*/
 
 /*mobile screen handling*/
 @media(max-width: 650px){
